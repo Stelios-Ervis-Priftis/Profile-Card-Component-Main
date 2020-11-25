@@ -3,7 +3,7 @@
 body {
 	margin: 0 auto;
 	text-align: center;
-	font-size: 11px;
+	font-size: 16px;
 	font-family: 'Kumbh Sans', sans-serif;
 	font-weight: 400;
 	color: hsl(0, 0%, 59%);
@@ -35,7 +35,7 @@ h6 {
 
 .card-container {
 	width: 30%;
-	height: 55%;
+	height: 60%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -43,6 +43,10 @@ h6 {
 	border-radius: 2rem;
 	background-color: whitesmoke;
 	z-index: 999;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .card-img-container {
@@ -74,6 +78,7 @@ h6 {
 }
 
 .profile-details h3 span {
+	font-weight: 400;
 	color: hsl(0, 0%, 59%);
 }
 
@@ -93,7 +98,7 @@ h6 {
 
 .attribution {
 	position: relative;
-	top: 720px;
+	top: 670px;
 	font-size: 15px;
 }
 
@@ -101,10 +106,14 @@ h6 {
 @media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 	.card-container {
 		width: 90%;
+		box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+			0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+			0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+			0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 	}
 
-	.attribution {
-		font-size: 12px;
+	.stats-container div p {
+		margin-top: 10px;
 	}
 
 	.top-bubble {
@@ -113,6 +122,10 @@ h6 {
 
 	.bottom-bubble {
 		left: 35%;
+	}
+	.attribution {
+		font-size: 12px;
+		top: 647px;
 	}
 }
 
